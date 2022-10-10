@@ -478,4 +478,140 @@ component, formatting, style, styling, insert
     en esta posición desplazará el nivel de Fermi a un nivel más cercano al de la banda media, lo que 
     explica el desplazamiento del voltaje umbral de los electrones.
 
+\section{FOTOSENSIBILIDAD}
+
+    Los TFT de silicio amorfo son fotosensibles y, sin embargo, para la mayoría de las aplicaciones 
+    esto no es deseable. La Figura 16 muestra las características de transferencia de un TFT en 
+    la oscuridad y bajo una iluminación superior de $2 \mathsf{X} 10^{4} lux$. La corriente de apagado de 
+    $10^{4} A$ es demasiado alta para la mayoría de las aplicaciones.
+
+\begin{figure}[htbp]
+    \centerline{\includegraphics[width=6.0cm]{img/imagen-16.png}}
+    \caption{Example of a figure caption.}%
+    \label{fig16}
+\end{figure} 
+
+    La física básica del efecto fototildado se ha descrito en [46]. Consideremos la generación de 
+    pares electrón-hueco en la región de flexión de banda, cuando se aplica una tensión de puerta 
+    positiva. Al principio, los electrones son barridos hacia la puerta y los huecos se alejan de 
+    la puerta. La carga espacial en los estados localizados se redistribuirá a través del cambio 
+    de ocupación inducido por los portadores libres y la flexión de banda se reducirá. Finalmente 
+    se alcanza un estado estacionario con un flujo igual de electrones y agujeros en la misma 
+    dirección dirección, pero sin flujo de corriente neto perpendicular a la la interfaz.
+    \\
+    La Figura 17 muestra un ejemplo de la reducción calculada de la flexión de banda, los perfiles 
+    de concentración de electrones y huecos, y el flujo de portadores en la condición de estado 
+    estacionario [46]. Obsérvese que el nivel de cuasi-Fermi para los electrones es esencialmente 
+    plano, pero el nivel de cuasi-Fermi para los huecos no lo es necesariamente. La forma más 
+    fácil de reducir la fotosensibilidad de los TFT es utilizar una fina capa de silicio amorfo 
+    intrínseco [14],[47]. Además, en los TFT de escalonamiento invertido, hay un cierto 
+    apantallamiento de la luz desde el electrodo de puerta.
+
+\begin{figure}[htbp]
+    \centerline{\includegraphics[width=10.0cm]{img/imagen-17.png}}
+    \caption{Example of a figure caption.}%
+    \label{fig17}
+\end{figure}  
+
+    Además, en el caso de un LCD, existe un apantallamiento de la luz desde el otro lado, debido a 
+    la máscara negra de la placa de filtro de color [8]. El efecto de apantallamiento de la luz del 
+    electrodo de puerta es una de las principales ventajas de la estructura escalonada invertida en 
+    comparación con la estructura escalonada normal, en la que a veces es necesaria una capa 
+    adicional de apantallamiento de la luz [47].
+    \\
+    En la Figura 18, mostramos la dependencia del espesor de la capa $i$ de la corriente de salida 
+    bajo iluminación, medida a $V_G=- 5 V$ y $V_D= 10 V$, para los transistores de tipo A y de tipo B.
+    La iluminación es desde la parte superior (sin apantallamiento de luz), a un nivel de 
+    $2 \mathsf{X} 1O^4 lux$ [8]. La corriente de apagado es la misma para ambos tipos de transistores por
+    encima de $1000 A$, pero para los transistores de tipo B, disminuye más rápidamente para las 
+    capas $i$ más delagadas, mostrando una dependencia de la ley de potencia de 
+    aproximadamente $2.5$ en función del espesor. En el caso de los transistores de tipo A, 
+    la ley de potencia se sitúa en torno a $1$, lo que puede explicarse sencillamente por la 
+    menor absorción y generación óptica en las capas $i$ más finas. 
+   
+\begin{figure}[htbp]
+    \centerline{\includegraphics[width=6.0cm]{img/imagen-18.png}}
+    \caption{Example of a figure caption.}%
+    \label{fig18}
+\end{figure}  
+ 
+    Sin embargo, interpretamos 
+    que la mayor dependencia del espesor en los transistores de tipo B se debe a una mayor densidad 
+    de centros de recombinación en la interfaz superior con el nitruro de silicio. A medida que 
+    se reduce el grosor de la capa $i$, estos centros tienen un efecto proporcionalmente mayor 
+    en la eliminación de la fotocorriente, por lo que la corriente de apagado disminuye más 
+    rápidamente de lo que cabría esperar debido únicamente a la reducción de la absorción óptica. 
+    Estos resultados apoyan la observación de una alta densidad de estados rápidos en la interfaz 
+    superior del nitruro [48]. Suponemos que estos mismos estados rápidos actúan como centros de 
+    recombinación.
+    
+\begin{figure}[htbp]
+    \centerline{\includegraphics[width=6.0cm]{img/imagen-19.png}}
+    \caption{Example of a figure caption.}%
+    \label{fig19}
+\end{figure} 
+
+    La colocación de una alta densidad de centros de recombinación en la interfase, lejos del 
+    aislante de puerta, es la forma óptima de disminuir la fotosensibilidad, con una mínima 
+    degradación de la pendiente de pre-umbral en la característica de transferencia. Esto es 
+    precisamente lo que ocurre en el transistor tipo B, lo que constituye una ventaja de la 
+    estructura tipo B sobre la estructura tipo A. La Figura 19 muestra las características de 
+    transferencia, de un transistor tipo B con un espesor de capa $i$ de $200 A$ en las condiciones 
+    de luz y oscuridad, como en la Figura 16. Esto es típico de un transistor utilizado en nuestra 
+    pantalla de cristal líquido [8].
+
+\section{PASIVACION}
+
+    La capa de pasivación que se deposita sobre el TFT altera las características de un transistor 
+    de tipo A, ya que la capa de pasivación está en contacto directo con el silicio en el canal. Por 
+    el contrario, la capa de pasivación tiene poco efecto en las características del dispositivo de 
+    un TFT de tipo B, ya que el nitruro superior separa la capa de pasivación del silicio. Se han 
+    comunicado resultados sobre el efecto de las capas de pasivación en las características de los 
+    transistores de tipo A para la pasivación con nitruro de silicio [49], [50], óxido de silicio [50] 
+    y poliimida [8]. La Figura 20 muestra un ejemplo del efecto de la pasivación por una capa de 
+    poliimida en la característica de transferencia de un transistor tipo A. La pasivación altera 
+    las características del transistor al modificar las condiciones de la superficie superior y 
+    cambiar la densidad de carga fija y/o los estados superficiales rápidos.
+    
+\begin{figure}[htbp]
+    \centerline{\includegraphics[width=6.0cm]{img/imagen-20.png}}
+    \caption{Example of a figure caption.}%
+    \label{fig20}
+\end{figure} 
+
+    El efecto de los estados rápidos y de la carga fija en la interfaz superior se ha calculado 
+    utilizando un programa informático que resuelve la ecuación de Poisson para el efecto de campo, 
+    sujeto a las condiciones de contorno adecuadas en la interfaz superior [51].
+    Los resultados dependen de la densidad de estados en el a-Si y del grosor de la capa $i$. 
+    En el caso de las capas $i$ gruesas o de densidades de estado elevadas, la región de flexión 
+    de banda en la interfaz del aislante de puerta y cualquier región de flexión de banda en la 
+    interfaz superior, inducida por la carga fija, no interactúan. En este caso, la carga fija 
+    aumenta la corriente de desactivación con un efecto insignificante en la tensión de umbral y 
+    la movilidad. Sin embargo, en el caso de capas $i$ más finas o densidades de estado bajas, 
+    las regiones de flexión de banda interactúan y una carga fija en la superficie superior puede 
+    alterar el voltaje umbral [51]. Además, una gran densidad de estados en la superficie superior 
+    tenderá a fijar el nivel de Fermi en la interfaz superior y esto hará que el voltaje umbral 
+    aumente a medida que el espesor de la capa intrínseca de silicio amorfo disminuya [50].
+    
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 \end{document}
