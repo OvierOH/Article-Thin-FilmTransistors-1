@@ -592,7 +592,102 @@ component, formatting, style, styling, insert
     alterar el voltaje umbral [51]. Además, una gran densidad de estados en la superficie superior 
     tenderá a fijar el nivel de Fermi en la interfaz superior y esto hará que el voltaje umbral 
     aumente a medida que el espesor de la capa intrínseca de silicio amorfo disminuya [50].
-    
+    \\
+    La Figura 21 muestra algunos resultados experimentales sobre la dependencia del espesor 
+    del voltaje umbral de los TFT de a-Si no pasivados, medidos en atmósfera seca después de 
+    la recoccido a 80°C. Los resultados experimentales se han comparado con los resultados calculados 
+    utilizando el programa informático de Powell y Pritchard [51]. La pronunciada dependencia del grosor 
+    está bien modelada por una densidad de estados profundos de $1 \mathsf{X} 10^{16} cm^3 eV^{-1}$ y una 
+    densidad de estados superficiales de $2 \mathsf{X} 10^{12} cm^2 eV^{-1}$, que se indica con la línea 
+    sólida de la Figura 21. La línea continua en la Figura 21. La dependencia del espesor desaparece tras 
+    el proceso de pasivación de la poliamida o incluso tras después de un simple recocido a $180^{\circ}C$ 
+    durante 1 h. El origen de los estados superficiales de la superficie no se conoce con exactitud, pero 
+    está relacionado con el procedimiento de grabado utilizado en la fabricación del transistor de tipo A 
+    del transistor.
+
+\begin{figure}[htbp]
+    \centerline{\includegraphics[width=9.0cm]{img/imagen-21.png}}
+    \caption{Example of a figure caption.}%
+    \label{fig21}
+\end{figure} 
+
+    Estos estados superficiales son bastante diferentes de los estados interfactuales de la interfaz 
+    superior de los transistores de tipo B, que propusimos que actuaran como centros de recombinación y 
+    redujeran la fotosensibilidad. Los transistores de tipo B no muestran una dependencia pronunciada del 
+    grosor de la tensión umbral, por lo que la densidad de los centros de recombinación no es tan grande 
+    como para que se pueda alcanzar el nivel de Fermi. Esto es coherente con nuestra observación de una 
+    acción razonable del transistor con los TFT de compuerta superior. Los estados superficiales en el 
+    transistor de tipo A son de una densidad lo suficientemente alta como para fijar el nivel de Fermi 
+    (esto se confirma por la falta de buena acción del transistor si se añade una puerta superior [50]), 
+    pero los estados no actúan como centros de recombinación. La dependencia del grosor de la corriente 
+    de apagado bajo iluminación para los transistores de tipo A, mostrada en la figura 18, era para los 
+    transistores de tipo A no pasivados, que también mostraban la pronunciada dependencia del grosor del 
+    umbral de tensión.
+    \\
+    La pasivación con poliimida de los transistores de tipo A también incrementa la corriente de salida, 
+    lo que sugiere que este proceso induce una pequeña densidad de carga positiva fija en la superficie 
+    superior. Possin y Su [50] descubrieron que los transistores de tipo A tenían una alta densidad de 
+    estados en la superficie superior después de la pasivación con nitruro de silicio, lo que significaba 
+    que sólo se podían fabricar transistores satisfactorios con capas i gruesas [50]. Hemos comprobado 
+    que las características del dispositivo de los transistores de tipo A pasivados con nitruro de silicio 
+    eran muy sensibles a las condiciones de deposición del nitruro superior [5], [49]. El estado de la 
+    superficie superior varía considerablemente y, en general, es bastante difícil de controlar. Esto es 
+    especialmente grave si tenemos que utilizar minicapas y es otra desventaja del transistor de tipo A en 
+    comparación con el transistor de tipo 3.
+
+\section{UNIFORMIDAD Y RENDIMIENTO}
+
+    En muchas aplicaciones, los TFT de a-Si se utilizan como interruptores de encendido y apagado, por 
+    lo que las exigencias de uniformidad del dispositivo no son muy severas. Basta con que la 
+    característica básica de cada transistor cumpla unos requisitos mínimos.
+    Por lo tanto, el requisito de uniformidad depende de la característica media. Sin embargo, en algunas 
+    aplicaciones la uniformidad de los dispositivos es más importante y siempre es beneficioso tener la 
+    mayor uniformidad posible. La figura 22 muestra un histograma de la distribución de la tensión umbral 
+    en una matriz de prueba de $96 \mathsf{X} 108$ transistores. La variación de la tensión de umbral es 
+    de unos $0,5 V$, que aumenta a unos $1 V$ para matrices de $6$ en diagonal de $288 \mathsf{X} 468$ 
+    transistores, como las utilizadas en una pantalla de cristal líquido [8].
+
+\begin{figure}[htbp]
+    \centerline{\includegraphics[width=9.0cm]{img/imagen-22.png}}
+    \caption{Example of a figure caption.}%
+    \label{fig22}
+\end{figure} 
+
+    La figura 23 muestra un mapa de la distribución espacial del voltaje umbral de los transistores dentro 
+    del conjunto, correspondiente al histograma de la figura 22. La dispersión de los voltajes umbral se 
+    debe principalmente a las variaciones lentas en el conjunto. El rendimiento de los transistores en 
+    funcionamiento es obviamente crucial en todas las aplicaciones. Los defectos en los transistores pueden 
+    provocar cortocircuitos o circuitos abiertos que tienen diversas consecuencias. Por ejemplo, en el caso 
+    de una pantalla de cristal líquido de matriz activa, los circuitos abiertos en la puerta, los circuitos 
+    abiertos en la fuente (línea de columna) y los cortocircuitos entre la puerta y la fuente provocan 
+    defectos en la línea de la pantalla, mientras que los circuitos abiertos en el drenaje, los 
+    cortocircuitos entre la fuente y el drenaje y los cortocircuitos entre la puerta y el drenaje provocan 
+    defectos puntuales en la pantalla. En la figura 23, no hay defectos de línea, pero sí algunos defectos 
+    puntuales debidos a circuitos abiertos de drenaje (píxel) (en negro en la Fig. 23) y algunos debidos a 
+    cortocircuitos de drenaje de puerta (en blanco en la Fig. 23).
+    \\
+    Se han propuesto varios métodos para mejorar su rendimiento. Entre ellos, las capas múltiples en los 
+    cruces, los perfiles cónicos del electrodo de la puerta, los dieléctricos multicapa[52], [53] y el uso 
+    de nuevas arquitecturas de TFT[54]-[56] tienen como objetivo eliminar los cortes de la fuente de la 
+    puerta. Otras mejoras potenciales provienen de los esquemas de metalización múltiple para la 
+    fuente-drenaje, la optimización del diseño de la máscara y el uso de diseños tolerantes a fallos [57],[58].
+    Hasta la fecha se han demostrado algunos resultados excelentes, pero este sigue siendo un ámbito en el
+    que es necesario seguir avanzando.
+
+\begin{figure}[htbp]
+    \centerline{\includegraphics[width=9.0cm]{img/imagen-23.png}}
+    \caption{Example of a figure caption.}%
+    \label{fig23}
+\end{figure} 
+
+\section{RESUMEN}
+    En este artículo hemos analizado algunos de los aspectos físicos básicos que subyacen al funcionamiento 
+    de los TFT de a-Si. Los temas tratados son de interés tanto por su importancia en las aplicaciones 
+    prácticas como por la visión que ofrecen de las propiedades fundamentales de los semiconductores amorfos. 
+    El tema más común es la electrónica de gran superficie, en la que los transistores deben fabricarse 
+    sobre grandes sustratos, generalmente de vidrio, y son dispositivos de entrada-salida para la 
+    tecnología de la información y representan un área de crecimiento para el futuro. Los transistores de 
+    película fina de silicio amorfo serán el núcleo de esta nueva industria.
 
 
 
